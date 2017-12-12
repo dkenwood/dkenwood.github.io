@@ -1,0 +1,36 @@
+* {
+  margin: 0; padding: 0;
+}
+body {
+  font-size: 100%;
+}
+.accordion {
+  width: 800px;
+  margin: 20px auto;
+}
+.accordion h1 {
+  cursor: pointer;
+  width: 350px;
+  padding: 10px 15px;
+  background-color: #ECF0F2;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.05em;
+  font-weight: normal;
+  color: #3F3F3F;
+  margin-bottom: 5px;
+}
+.accordion h1:hover {
+  background-color: #DDE3E6;
+  color: #2E2E2E;
+}
+.accordion div, .accordion p {
+  display: none;
+  margin-left: 25px;
+}
+.accordion .opened-for-codepen {
+  display: block;
+}
+.accordion label::before, .accordion label::after {
+  background-image: url(../img/cd-icons.svg);
+  background-repeat: no-repeat;
+}
