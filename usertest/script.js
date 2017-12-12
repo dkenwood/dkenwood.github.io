@@ -1,4 +1,5 @@
-/*global $ */
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
 
 
 // originally had >1 header
