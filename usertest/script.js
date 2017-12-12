@@ -1,3 +1,6 @@
+/*global $ */
+
+
 // originally had >1 header
 var header = ["H1"];
 
@@ -13,7 +16,7 @@ $(".accordion").click(function(e) {
     //slideUp all elements (except target) at current depth or greater
     var depth = $(subItem).parents().length;
     var allAtDepth = $(".accordion p, .accordion div").filter(function() {
-      if(depth == 0) {
+      if(depth === 0) {
         return false;
       }
       if($(this).parents().length >= depth && this !== subItem.get(0)) {
