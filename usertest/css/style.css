@@ -2,10 +2,10 @@
   margin: 0; padding: 0;
 }
 body {
-  font-size: 100%;
+  margin-top: 100px;
 }
 .accordion {
-  width: 800px;
+  width: 550px;
   margin: 20px auto;
 }
 .accordion h1 {
