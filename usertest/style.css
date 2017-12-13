@@ -27,10 +27,13 @@ body {
   display: none;
   margin-left: 25px;
 }
-.accordion .opened-for-codepen {
+.accordion .opened {
   display: block;
 }
 .accordion label::before, .accordion label::after {
   background-image: url(../img/cd-icons.svg);
   background-repeat: no-repeat;
+}
+.accordion h1.selected {
+  background-color: #CEE5EE;
 }

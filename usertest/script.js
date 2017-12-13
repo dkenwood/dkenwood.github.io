@@ -1,15 +1,11 @@
-/*jslint browser: true*/
-/*global $, jQuery, alert*/
-
-
-// originally had >1 header
 var header = ["H1"];
 
 $(".accordion").click(function(e) {
   var target = e.target,
       name = target.nodeName.toUpperCase();
   
-  //var selected;
+  $( "h1" ).removeClass( "selected" )
+  $(target).addClass("selected");
   
   if($.inArray(name,header) > -1) {
     var subItem = $(target).next();
@@ -26,12 +22,8 @@ $(".accordion").click(function(e) {
     });
     $(allAtDepth).slideUp("fast");
     
-   // $(target).css("background-color","#CEE5EE");
-    
-    //slideToggle target content and adjust bottom border if necessary
+    //slideToggle target content
     subItem.slideToggle("fast",function() {
-        //$(target).css("background-color","#CEE5EE");
     });
- //   $(target).css({"border-bottom-right-radius":"0", "border-bottom-left-radius":"0"});
   }
 });
