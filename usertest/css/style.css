@@ -1,35 +1,44 @@
 * {
-  margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  margin-top: 100px;
+    margin-top: 50px;
 }
+
 .accordion {
-  width: 550px;
-  margin: 20px auto;
+    width: 550px;
+    margin: 20px auto;
 }
+
 .accordion h1 {
-  cursor: pointer;
-  width: 350px;
-  padding: 10px 15px;
-  background-color: #ECF0F2;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.05em;
-  font-weight: normal;
-  color: #3F3F3F;
-  margin-bottom: 5px;
+    cursor: pointer;
+    width: 350px;
+    padding: 10px 15px;
+    background-color: #ECF0F2;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.01em;
+    font-weight: normal;
+    color: #3F3F3F;
+    margin-bottom: 5px;
 }
+
 .accordion h1:hover {
-  background-color: #DDE3E6;
-  color: #2E2E2E;
+    background-color: #DDE3E6;
+    color: #2E2E2E;
 }
-.accordion div, .accordion p {
-  display: none;
-  margin-left: 25px;
+
+.accordion div,
+.accordion p {
+    display: none;
+    margin-left: 25px;
 }
+
 .accordion .opened {
-  display: block;
+    display: block;
 }
+
 .accordion h1.selected {
-  background-color: #CEE5EE;
+    background-color: #CEE5EE;
 }
